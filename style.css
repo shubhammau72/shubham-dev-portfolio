@@ -1,0 +1,339 @@
+
+/* =================================
+   SHUBHAM.DEV - PREMIUM PORTFOLIO
+================================= */
+
+:root {
+    --bg: #080812;
+    --card: #121222;
+    --purple: #a855f7;
+    --cyan: #67e8f9;
+    --white: #f8f7ff;
+    --muted: #aaa8bd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--white);
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(8, 8, 18, 0.92);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid #29213d;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 16px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--purple);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+nav ul a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.3s;
+}
+
+nav ul a:hover {
+    color: var(--cyan);
+}
+
+/* COMMON SECTIONS */
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 85px 6%;
+    scroll-margin-top: 90px;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    margin-top: 8px;
+    border-radius: 10px;
+    background: linear-gradient(
+        90deg, var(--purple), var(--cyan)
+    );
+}
+
+section p {
+    color: var(--muted);
+}
+
+/* HERO SECTION */
+
+#home {
+    min-height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: radial-gradient(
+        ellipse at 80% 30%,
+        rgba(168, 85, 247, 0.18),
+        transparent 60%
+    );
+}
+
+#home .tagline {
+    color: var(--cyan);
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+#home h1 {
+    font-size: clamp(40px, 9vw, 76px);
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+#home h1 span {
+    background: linear-gradient(
+        90deg, #c084fc, #67e8f9
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#home h2 {
+    font-size: clamp(20px, 5vw, 29px);
+    color: var(--muted);
+    margin-bottom: 12px;
+}
+
+#home h2::after {
+    display: none;
+}
+
+#home > p:not(.tagline) {
+    max-width: 560px;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    margin: 24px 10px 0 0;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: var(--purple);
+    color: white;
+    border: 1px solid var(--purple);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 24px rgba(168, 85, 247, 0.45);
+}
+
+.btn-outline {
+    background: transparent;
+    border-color: var(--cyan);
+    color: var(--cyan);
+}
+
+.btn-outline:hover {
+    background: var(--cyan);
+    color: var(--bg);
+}
+
+/* ABOUT */
+
+#about > p {
+    max-width: 760px;
+    font-size: 16px;
+}
+
+/* EDUCATION & PROJECT CARDS */
+
+.card {
+    padding: 24px;
+    margin: 18px 0;
+    border-radius: 16px;
+    border: 1px solid #29213d;
+    background: linear-gradient(
+        135deg, #151526, #0d0d18
+    );
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--purple);
+    box-shadow: 0 8px 28px rgba(168, 85, 247, 0.10);
+}
+
+.card h3 {
+    color: var(--cyan);
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+/* SKILLS */
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills-list span {
+    padding: 10px 16px;
+    border: 1px solid #463063;
+    border-radius: 10px;
+    background: #151124;
+    color: #e9d5ff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.skills-list span:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+    transform: translateY(-3px);
+}
+
+/* CONTACT */
+
+#contact {
+    text-align: center;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(168, 85, 247, 0.10),
+        transparent 70%
+    );
+}
+
+#contact h2::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    border-top: 1px solid #29213d;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* SIMPLE ANIMATION */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#home > * {
+    animation: fadeUp 0.8s ease both;
+}
+
+#home h1 {
+    animation-delay: 0.1s;
+}
+
+#home h2 {
+    animation-delay: 0.2s;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+    nav {
+        justify-content: center;
+        padding: 14px 4%;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 10px 14px;
+    }
+
+    nav ul a {
+        font-size: 12px;
+    }
+
+    section {
+        padding: 65px 6%;
+    }
+
+    section h2 {
+        font-size: 27px;
+    }
+
+    #home {
+        min-height: 70vh;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .btn {
+        padding: 11px 15px;
+    }
+          }
