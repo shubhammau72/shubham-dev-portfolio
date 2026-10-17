@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham.Dev | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#home" class="logo">SHUBHAM<span>.DEV</span></a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <p class="tagline">WELCOME TO MY PORTFOLIO</p>
+            <h1>Hi, I'm <span>Shubham</span></h1>
+            <h2>Student Developer</h2>
+            <p>Class 11 Computer Science student learning Python and web development.</p>
+            <a href="#projects" class="btn">Explore My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a student interested in technology, programming and creating useful projects. I have completed ADCA and am developing my skills in Python and web development.</p>
+        </section>
+
+        <section id="education">
+            <h2>My Education</h2>
+            <article class="card">
+                <h3>Class 11 — Computer Science</h3>
+                <p>Currently studying Computer Science with Python.</p>
+            </article>
+            <article class="card">
+                <h3>ADCA</h3>
+                <p>Advanced Diploma in Computer Applications — Completed.</p>
+            </article>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skills-list">
+                <span>Computer Fundamentals</span>
+                <span>MS Office</span>
+                <span>Python — Learning</span>
+                <span>HTML — Learning</span>
+                <span>CSS — Learning</span>
+                <span>JavaScript — Learning</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <article class="card">
+                <h3>Personal Portfolio</h3>
+                <p>My portfolio website built with HTML and CSS.</p>
+                <p>Status: In progress</p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Let's Connect</h2>
+            <p>I'm learning, building projects and exploring technology.</p>
+            <a href="https://github.com/" class="btn">Visit GitHub</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Shubham.Dev | Built while learning.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
